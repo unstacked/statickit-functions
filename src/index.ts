@@ -1,5 +1,1 @@
-import { StaticKit } from '@statickit/core';
-
-export function noop(client: StaticKit): void {
-  return;
-}
+export { StaticKit, createClient } from '@statickit/core';

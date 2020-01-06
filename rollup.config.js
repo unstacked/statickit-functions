@@ -5,6 +5,7 @@ const extensions = ['.js', '.ts'];
 
 export default {
   input: 'src/index.ts',
+  external: ['@statickit/core'],
   plugins: [
     babel({
       extensions,
