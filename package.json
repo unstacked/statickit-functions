@@ -1,0 +1,29 @@
+{
+  "name": "@statickit/functions",
+  "version": "0.0.0",
+  "private": true,
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*.{js,ts}"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && npm run build:types && npm run build:js",
+    "build:js": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@statickit/core": "github:unstacked/statickit-core#functions"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-typescript": "^7.7.7",
+    "prettier": "^1.19.1",
+    "rollup": "^1.28.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.7.4"
+  }
+}
