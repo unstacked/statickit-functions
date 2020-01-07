@@ -5,7 +5,8 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*.{js,ts}"
+    "dist/**/*.{js,ts}",
+    "types.d.ts"
   ],
   "scripts": {
     "build": "rm -rf dist && npm run build:types && npm run build:js",
