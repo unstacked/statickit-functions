@@ -1,5 +1,6 @@
 import babel from 'rollup-plugin-babel';
 import nodeResolve from 'rollup-plugin-node-resolve';
+import pkg from './package.json';
 
 const extensions = ['.js', '.ts'];
 
@@ -16,8 +17,14 @@ export default {
       browser: true
     })
   ],
-  output: {
-    format: 'esm',
-    file: 'dist/index.js'
-  }
+  output: [
+    {
+      format: 'cjs',
+      file: pkg.main
+    },
+    {
+      format: 'esm',
+      file: pkg.module
+    }
+  ]
 };

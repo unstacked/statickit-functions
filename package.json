@@ -2,7 +2,8 @@
   "name": "@statickit/functions",
   "version": "0.0.0",
   "private": true,
-  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*.{js,ts}",
