@@ -1,1 +1,1 @@
-export * from '@statickit/core/functions';
+export * from './dist/types';
