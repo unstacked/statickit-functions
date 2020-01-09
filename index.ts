@@ -1,1 +1,1 @@
-export { StaticKit, createClient } from "@statickit/core";
+export { StaticKit, createClient } from '@statickit/core';
