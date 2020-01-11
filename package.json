@@ -4,12 +4,7 @@
   "private": true,
   "main": "index.js",
   "types": "index.d.ts",
-  "files": [
-    "index.ts",
-    "index.js",
-    "index.d.ts",
-    "types.d.ts"
-  ],
+  "files": ["*"],
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build"
