@@ -6,8 +6,10 @@
   "types": "index.d.ts",
   "files": ["*"],
   "scripts": {
-    "build": "echo \"fail on build\" && exit 1",
-    "prepare": "echo \"fail on build\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublish": "echo \"fail on build\" && exit 1"
+
   },
   "dependencies": {
     "@statickit/core": "^2.1.0"
