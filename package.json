@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "files": ["*"],
   "scripts": {
-    "build": "tsc",
+    "build": "echo 'building tsc...' && tsc",
     "prepare": "npm run build"
   },
   "dependencies": {
