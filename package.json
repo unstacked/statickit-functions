@@ -7,7 +7,7 @@
   "files": ["*"],
   "scripts": {
     "build": "echo \"fail on build\" && exit 1",
-    "prepare": "npm run build"
+    "prepare": "echo \"fail on build\" && exit 1"
   },
   "dependencies": {
     "@statickit/core": "^2.1.0"
