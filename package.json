@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "files": ["*"],
   "scripts": {
-    "build": "echo 'building tsc...' && tsc",
+    "build": "echo \"fail on build\" && exit 1",
     "prepare": "npm run build"
   },
   "dependencies": {
