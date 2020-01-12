@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "outDir": "dist",
     "declaration": true,
+    "declarationDir": "dist",
     "moduleResolution": "node",
     "lib": ["dom", "es6"]
   },
