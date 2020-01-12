@@ -6,6 +6,7 @@
   "files": ["*"],
   "scripts": {
     "build": "tsc",
+    "prepublish": "npm run build",
     "prepare": "npm run build"
   },
   "dependencies": {
