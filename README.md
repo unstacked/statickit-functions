@@ -1,5 +1,3 @@
-# StaticKit Functions
+# @statickit/functions
 
-This is a shim for site-specific StaticKit functions.
-
-Versions of this package are auto-generated upon deployment.
+A shim for site-specific StaticKit functions. This package is auto-generated during the deployment process.
