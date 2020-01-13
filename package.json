@@ -1,17 +1,13 @@
 {
   "name": "@statickit/functions",
   "version": "2.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["*"],
-  "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build"
-  },
+  "private": true,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "*"
+  ],
   "dependencies": {
     "@statickit/core": "^2.1.0"
-  },
-  "devDependencies": {
-    "typescript": "^3.7.4"
   }
 }
