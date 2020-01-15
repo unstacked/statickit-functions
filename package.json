@@ -8,6 +8,6 @@
     "*"
   ],
   "dependencies": {
-    "@statickit/core": "^2.1.0"
+    "@statickit/core": "^2.2.0"
   }
 }
