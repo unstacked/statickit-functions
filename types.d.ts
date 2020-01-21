@@ -29,3 +29,18 @@ export namespace Mailchimp {
     export type Response = Success | Failure;
   }
 }
+
+export namespace Mailchimp {
+  export namespace CreateEvent {
+    export interface Args extends FunctionArgs {
+      emailAddress: string;
+      mergeFields?: object;
+    }
+
+    export interface Success extends FunctionSuccess {
+      id: string;
+    }
+
+    export type Response = Success | Failure;
+  }
+}
