@@ -90,6 +90,8 @@ export namespace Stripe {
       customerToken: string;
       items: Array<{
         plan: string;
+        quantity?: number;
+        metadata?: object;
       }>;
       metadata?: object;
       coupon?: string;
