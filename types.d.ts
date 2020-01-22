@@ -44,3 +44,41 @@ export namespace Mailchimp {
     export type Response = Success | Failure;
   }
 }
+
+export namespace Stripe {
+  export namespace CreateCustomer {
+    export interface Args extends FunctionArgs {
+      name?: string;
+      description?: string;
+      email?: string;
+      metadata?: object;
+      source?: string;
+    }
+
+    export interface Success extends FunctionSuccess {
+      id: string;
+    }
+
+    export type Response = Success | Failure;
+  }
+}
+
+export namespace Stripe {
+  export namespace CreateCharge {
+    export interface Args extends FunctionArgs {
+      amount: number;
+      currency?: string;
+      description?: string;
+      metadata?: object;
+      source?: string;
+      customer?: string;
+    }
+
+    export interface Success extends FunctionSuccess {
+      id: string;
+      paymentStatus: "succeeded" | "pending" | "failed";
+    }
+
+    export type Response = Success | Failure;
+  }
+}
