@@ -57,6 +57,7 @@ export namespace Stripe {
 
     export interface Success extends FunctionSuccess {
       id: string;
+      defaultSource: string | null;
     }
 
     export type Response = Success | Failure;
