@@ -83,3 +83,30 @@ export namespace Stripe {
     export type Response = Success | Failure;
   }
 }
+
+export namespace Stripe {
+  export namespace CreateSubscription {
+    export interface Args extends FunctionArgs {
+      customerToken: string;
+      items: Array<{
+        plan: string;
+      }>;
+      metadata?: object;
+      coupon?: string;
+    }
+
+    export interface Success extends FunctionSuccess {
+      id: string;
+      subscriptionStatus:
+        | "incomplete"
+        | "incomplete_expired"
+        | "trialing"
+        | "active"
+        | "past_due"
+        | "canceled"
+        | "unpaid";
+    }
+
+    export type Response = Success | Failure;
+  }
+}
